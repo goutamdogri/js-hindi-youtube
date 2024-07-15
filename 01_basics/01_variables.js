@@ -1,22 +1,18 @@
 const accountId = 144553
-let accountEmail = "hitesh@google.com"
+let accountEmail = "goutam@gmail.com"
 var accountPassword = "12345"
 accountCity = "Jaipur"
-let accountState;
+let accountState
 
-// accountId = 2 // not allowed
+// const --- accountId = 2 // not allowed. ```TypeError: Assignment to constant variable.```
+// var --- block and functional scope does not exist. prefer not to use var
 
+// without keyword --- it is possible, but do not use it.
 
-accountEmail = "hc@hc.com"
-accountPassword = "21212121"
+// not initialized with a value --- it actually stores - "undefined"
+
+accountEmail = "g@gmail.com"
+accountPassword = "73568592"
 accountCity = "Bengaluru"
 
-console.log(accountId);
-
-/*
-Prefer not to use var
-because of issue in block scope and functional scope
-*/
-
-
-console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
+console.table([accountId, accountEmail, accountPassword, accountCity, accountState]);
